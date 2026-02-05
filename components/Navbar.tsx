@@ -14,16 +14,24 @@ export const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
+    {
+      name: 'Take Out',
+      href: 'https://order.toasttab.com/online/honey-road-156-church-street',
+    },
     { name: 'Story', href: '#about' },
     { name: 'Menu', href: '#menu' },
     { name: 'Team', href: '#team' },
     { name: 'Visit', href: '#reservations' },
+    {
+      name: 'Gift Card',
+      href: 'https://swipeit.com/co-branded/merchant/honey-road-restaurant-10128',
+    },
   ];
 
   return (
     <>
       <nav className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4">
-        <div 
+        <div
           className={`
             relative flex items-center justify-between gap-8 px-6 py-3
             bg-charcoal/70 backdrop-blur-xl border border-white/10
@@ -33,11 +41,11 @@ export const Navbar: React.FC = () => {
         >
           {/* Logo */}
           <a href="#" className="flex-shrink-0">
-             <img 
-               src="https://images.squarespace-cdn.com/content/v1/5957ae9ee110eba6435036aa/d5a9cb32-4db4-4b6b-9846-d08053dcdf98/HoneyRoad_Eye_2.png?format=2500w" 
-               alt="Honey Road Eye" 
-               className="h-8 w-auto opacity-90 hover:opacity-100 transition-opacity"
-             />
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/5957ae9ee110eba6435036aa/d5a9cb32-4db4-4b6b-9846-d08053dcdf98/HoneyRoad_Eye_2.png?format=2500w"
+              alt="Honey Road Eye"
+              className="h-8 w-auto opacity-90 hover:opacity-100 transition-opacity"
+            />
           </a>
 
           {/* Desktop Nav */}
@@ -90,14 +98,14 @@ export const Navbar: React.FC = () => {
             {link.name}
           </a>
         ))}
-         <a
-              href="https://resy.com/cities/burlington-vt/venues/honey-road?seats=2"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 px-8 py-3 bg-pink-500 text-white font-bold tracking-widest uppercase rounded-full"
-            >
-              Book Table
-         </a>
+        <a
+          href="https://resy.com/cities/burlington-vt/venues/honey-road?seats=2"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 px-8 py-3 bg-pink-500 text-white font-bold tracking-widest uppercase rounded-full"
+        >
+          Book Table
+        </a>
       </div>
     </>
   );
