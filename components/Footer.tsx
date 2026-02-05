@@ -14,17 +14,21 @@ export const Footer: React.FC = () => {
             <h3 className="font-serif text-2xl text-white mb-4">
               HONEY <span className="text-pink-500">ROAD</span>
             </h3>
-            <p className="text-white/50 text-sm leading-relaxed max-w-xs mx-auto md:mx-0">
+            <p className="text-white/50 mb-2 text-sm leading-relaxed max-w-xs mx-auto md:mx-0">
               Eastern Mediterranean Mezze & Small Plates.
               <br />
               Women-owned. Locally sourced.
             </p>
-            <p className="text-white/50 text-xs font-bold leading-relaxed max-w-xs mx-auto md:mx-0">
-              <br />
+            <a
+              href="https://maps.app.goo.gl/U9yxnRQfbp4e26Vs5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/50 hover:text-pink-500 text-xs font-bold leading-relaxed max-w-xs mx-auto md:mx-0"
+            >
               156 Church Street, Burlington
               <br />
               VT, 05401, United States
-            </p>
+            </a>
           </div>
 
           {/* Contact */}
@@ -39,7 +43,7 @@ export const Footer: React.FC = () => {
               <Phone size={16} /> 802-497-2145
             </a>
             <a
-              href="mailto:hello@honeyroad.com"
+              href="mailto:info@honeyroadrestaurant.com"
               className="flex items-center justify-center gap-2 text-white/70 hover:text-white transition-colors"
             >
               <Mail size={16} /> info@honeyroadrestaurant.com
