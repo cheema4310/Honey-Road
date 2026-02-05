@@ -1,15 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Honey Road | Eastern Mediterranean Mezze</title>
-    
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://images.squarespace-cdn.com/content/v1/5957ae9ee110eba6435036aa/d5a9cb32-4db4-4b6b-9846-d08053dcdf98/HoneyRoad_Eye_2.png?format=2500w"
+    />
+
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -23,9 +31,9 @@
                 600: '#d9207a',
               },
               honey: {
-                // Keeping honey for backwards compatibility or specific gold accents if needed, 
+                // Keeping honey for backwards compatibility or specific gold accents if needed,
                 // but muted slightly to not compete with the pink.
-                500: '#D4AF37', 
+                500: '#D4AF37',
               },
               burnt: {
                 500: '#CC5500',
@@ -39,17 +47,18 @@
               sans: ['"Montserrat"', 'sans-serif'],
             },
             backgroundImage: {
-              'hero-pattern': "url('https://picsum.photos/id/431/1920/1080')", 
-              'texture-pattern': "url('https://www.transparenttextures.com/patterns/cubes.png')",
-            }
+              'hero-pattern': "url('https://picsum.photos/id/431/1920/1080')",
+              'texture-pattern':
+                "url('https://www.transparenttextures.com/patterns/cubes.png')",
+            },
           },
         },
-      }
+      };
     </script>
     <style>
       body {
-        background-color: #1A1A1B;
-        color: #FFF9F0;
+        background-color: #1a1a1b;
+        color: #fff9f0;
         overflow-x: hidden;
       }
       /* Custom Scrollbar */
@@ -57,30 +66,30 @@
         width: 8px;
       }
       ::-webkit-scrollbar-track {
-        background: #1A1A1B; 
+        background: #1a1a1b;
       }
       ::-webkit-scrollbar-thumb {
-        background: #FF3998; 
+        background: #ff3998;
         border-radius: 4px;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #d9207a; 
+        background: #d9207a;
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
+    <script type="importmap">
+      {
+        "imports": {
+          "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+          "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+          "react/": "https://esm.sh/react@^19.2.4/",
+          "react": "https://esm.sh/react@^19.2.4"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
   <body>
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
